@@ -1,8 +1,7 @@
 import com.example.calcolatrice.CalcController;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-public class SommaTest {
+ class SommaTest {
     @Test
     void sommaTest(){
         double a = 2;
