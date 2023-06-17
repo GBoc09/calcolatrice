@@ -115,16 +115,13 @@ public class CalcController {
             saveNum.setText("");
     }
     public double somma(Double a, Double b) {
-            double result ;
-            return result = a+b;
+            return a+b;
     }
     public double sottrazione(Double a, Double b){
-        double result;
-        return result = a-b;
+        return a-b;
     }
     public double moltiplicazione(Double a, Double b){
-            double result;
-            return result= a*b;
+            return a*b;
     }
     public double divisione(Double a, Double b){
             double result;
