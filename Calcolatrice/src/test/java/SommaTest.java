@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 public class SommaTest {
     @Test
     void sommaTest(){
-        int a = 2;
-        int b = 2;
+        double a = 2;
+        double b = 2;
         CalcController calcController = new CalcController();
-        int expectedRes = 2;
-        int res = calcController.somma(a,b);
+        double expectedRes = 2;
+        Double res = calcController.somma(a,b);
         Assertions.assertEquals(expectedRes, res);
     }
 }

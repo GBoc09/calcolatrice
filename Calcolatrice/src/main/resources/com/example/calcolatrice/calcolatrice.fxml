@@ -8,23 +8,23 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcolatrice.CalcController">
    <children>
       <TextField fx:id="text" layoutX="16.0" layoutY="39.0" prefHeight="125.0" prefWidth="265.0" style="-fx-background-color: white;" />
-      <Button fx:id="canc" layoutX="28.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="C" />
-      <Button fx:id="div" layoutX="238.0" layoutY="174.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="/" />
-      <Button fx:id="seven" layoutX="28.0" layoutY="215.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="7" />
-      <Button fx:id="eight" layoutX="98.0" layoutY="215.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="8" />
-      <Button fx:id="nine" layoutX="168.0" layoutY="215.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="9" />
-      <Button fx:id="mult" layoutX="238.0" layoutY="215.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="X" />
-      <Button fx:id="four" layoutX="28.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="4" />
-      <Button fx:id="five" layoutX="98.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="5" />
-      <Button fx:id="six" layoutX="168.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="6" />
-      <Button fx:id="min" layoutX="238.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="-" />
-      <Button fx:id="one" layoutX="28.0" layoutY="295.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="1" />
-      <Button fx:id="two" layoutX="98.0" layoutY="295.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="2" />
-      <Button fx:id="three" layoutX="168.0" layoutY="295.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="3" />
-      <Button fx:id="plus" layoutX="238.0" layoutY="295.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="+" />
-      <Button fx:id="zero" layoutX="26.0" layoutY="335.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="0" />
-      <Button fx:id="dot" layoutX="168.0" layoutY="335.0" mnemonicParsing="false" onAction="#OnClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="." />
-      <Button fx:id="eq" layoutX="238.0" layoutY="335.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="=" />
+      <Button fx:id="canc" layoutX="28.0" layoutY="175.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="C" />
+      <Button fx:id="div" layoutX="238.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="/" />
+      <Button fx:id="seven" layoutX="28.0" layoutY="215.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="7" />
+      <Button fx:id="eight" layoutX="98.0" layoutY="215.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="8" />
+      <Button fx:id="nine" layoutX="168.0" layoutY="215.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="9" />
+      <Button fx:id="mult" layoutX="238.0" layoutY="215.0" mnemonicParsing="false" onAction="#onAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="X" />
+      <Button fx:id="four" layoutX="28.0" layoutY="255.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="4" />
+      <Button fx:id="five" layoutX="98.0" layoutY="255.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="5" />
+      <Button fx:id="six" layoutX="168.0" layoutY="255.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="6" />
+      <Button fx:id="min" layoutX="238.0" layoutY="255.0" mnemonicParsing="false" onAction="#onAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="-" />
+      <Button fx:id="one" layoutX="28.0" layoutY="295.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="1" />
+      <Button fx:id="two" layoutX="98.0" layoutY="295.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="2" />
+      <Button fx:id="three" layoutX="168.0" layoutY="295.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="3" />
+      <Button fx:id="plus" layoutX="238.0" layoutY="295.0" mnemonicParsing="false" onAction="#onAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="+" />
+      <Button fx:id="zero" layoutX="26.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="0" />
+      <Button fx:id="dot" layoutX="168.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="." />
+      <Button fx:id="eq" layoutX="238.0" layoutY="335.0" mnemonicParsing="false" onAction="#onAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="=" />
       <Text fx:id="saveNum" layoutX="48.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </AnchorPane>

@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -35,7 +34,7 @@ public class CalcController {
         private String operazione;
 
         @FXML
-        void OnAction(ActionEvent event) {
+        void onAction(ActionEvent event) {
             Node source = (Node) event.getSource();
             if (source == plus) {
                 setUp("+");
@@ -55,7 +54,7 @@ public class CalcController {
         }
 
         @FXML
-        void OnClick(ActionEvent event) {
+        void onClick(ActionEvent event) {
             Node source = (Node) event.getSource();
             if(source == one) {addNumber("1");}
             if(source == two) {addNumber("2");}
@@ -84,39 +83,30 @@ public class CalcController {
             saveNum.setText(firstNum+""+operazione);
     }
     public void calculate(){
-            int primo = Integer.parseInt(firstNum);
-            int secondo = Integer.parseInt(currNum);
+            double primo = Integer.parseInt(firstNum);
+            double secondo = Integer.parseInt(currNum);
             switch (operazione){
                 case "+" -> {
-                    int result = somma(primo, secondo);
-//                    int result = primo + secondo;
+                    double result = somma(primo, secondo);
                     saveNum.setText(firstNum + "+" + currNum + " = " + result);
                     text.setText(String.valueOf(result));
                 }
                 case "-" -> {
-                    int result = sottrazione(primo, secondo);
-//                    int result = primo - secondo;
+                    double result = sottrazione(primo, secondo);
                     saveNum.setText(firstNum + "-" + currNum + " = " + result);
                     text.setText(String.valueOf(result));
                 }
                 case "*" -> {
-                    int result = moltiplicazione(primo, secondo);
-//                    int result = primo * secondo;
+                    double result = moltiplicazione(primo, secondo);
                     saveNum.setText(firstNum + "*" + currNum + " = " + result);
                     text.setText(String.valueOf(result));
                 }
                 case "/" -> {
                     double result = divisione(primo, secondo);
-//                    if(primo == 0 ){
-//                        result = 0;
-//                    }else if (secondo == 0){
-//                        text.setText("ERROR");
-//                    } else {
-//                        result = primo / (double)secondo;
-//                    }
                     saveNum.setText(firstNum + "/" + currNum + " = " + result);
                     text.setText(String.valueOf(result));
                 }
+                default -> clearTextField();
             }
     }
     private void clearTextField(){
@@ -124,19 +114,19 @@ public class CalcController {
             text.setText("");
             saveNum.setText("");
     }
-    public Integer somma(Integer a, Integer b) {
-            int result = a+b;
+    public double somma(Double a, Double b) {
+            double result = a+b;
             return result;
     }
-    public Integer sottrazione(Integer a, Integer b){
-            int result = a-b;
+    public double sottrazione(Double a, Double b){
+            double result = a-b;
             return result;
     }
-    public Integer moltiplicazione(Integer a, Integer b){
-            int result = a*b;
+    public double moltiplicazione(Double a, Double b){
+            double result = a*b;
             return result;
     }
-    public Double divisione(Integer a, Integer b){
+    public double divisione(Double a, Double b){
             double result;
             if(a == 0){
                 result = 0;
